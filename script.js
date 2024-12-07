@@ -10,6 +10,7 @@ formulario.addEventListener('submit', (event) => {
     const success = document.getElementById('success');
     const subscribe = document.getElementById('subscribe');
     const errorMsg = document.getElementById('errorMsg');
+    const mailInput = document.getElementById('mail');
 
     // Expresión regular para validar correos electrónicos
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,7 +19,10 @@ formulario.addEventListener('submit', (event) => {
         success.style.display = 'none';
         subscribe.style.display = 'block';
         errorMsg.textContent = `Valid email required`;
-
+        mailInput.style.backgroundColor = 'rgba(255, 98, 87, 0.2)';
+        mailInput.style.border = '1px solid rgb(255, 98, 87)';
+        mailInput.classList.add('tomato');
+        
     } else {
         success.style.display = 'block';
         subscribe.style.display = 'none';

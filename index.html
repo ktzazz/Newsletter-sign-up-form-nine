@@ -33,16 +33,33 @@
 
   <p id="subDesc"> Join 60,000+ product managers receiving monthly updates on:</p>
 
- <div class="list">
- <img src="assets/images/icon-list.svg" alt="icon-list" id="icon-list"><span class="list-text"> Product discovery and building what matters </span>
- <br>
- <img src="assets/images/icon-list.svg" alt="icon-list" id="icon-list"> <span class="list-text"> Measuring to ensure updates are a success </span>
- <br>
- <img src="assets/images/icon-list.svg" alt="icon-list" id="icon-list"><span class="list-text"> And much more! </span></div>
+ <ul>
+  <li>
+    <div class="itemL">
+        <img src="assets/images/icon-list.svg" alt="icon">
+        Product discovery and building what matters
+    </div>
+  </li>
+  <li>
+    <div class="itemL">
+        <img src="assets/images/icon-list.svg" alt="icon">
+        Measuring to ensure updates are a success
+    </div>
+  </li>
+  <li>
+    <div class="itemL">
+        <img src="assets/images/icon-list.svg" alt="icon">
+        And much more!
+    </div>
+  </li>
+  </ul>
+ 
 
   <form id="mailForm">
-  <label for="mail"> Email address </label> <span id="errorMsg"></span>
+  <div id="labels"> <label for="mail"> Email address </label> <span id="errorMsg"></span></div>
+  <br>
   <input type="email" id="mail" name="mail" placeholder="email@company.com"> 
+  <br>
   <button type="submit"> Subscribe to monthly newsletter </button>
   </form>
 
@@ -57,7 +74,7 @@
   <h1 id="sTitle"> Thanks for subscribing! </h1>
 
   <p id="sDesc"> A confirmation email has been sent to <span id="userEmail"></span> 
-  <!--ash@loremcompany.com. -->
+  <!--ash@loremcompany.com -->
   Please open it and click the button inside to confirm your subscription. </p>
 
   <button id="goBack"> Dismiss message </button>

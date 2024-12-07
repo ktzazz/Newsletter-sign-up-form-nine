@@ -32,31 +32,112 @@ body{
 
 h1{
     font-size: 2.2rem;
+    font-weight: var(--weight7);
 }
 
 p{
-    font-size: 0.97rem;
+    font-size: 1.02rem;
     padding: 1.3rem 0.95rem 1.3rem 0rem;
+    font-weight: var(--weight4);
 }
 
-.list img{
-    width: 1.2rem;
+ul{
+    list-style: none;
+    margin-inline-start: -1rem;
 }
 
-.list span{
+.itemL {
+    display: flex;
+    align-items: start;
+    padding: 0.3rem 1rem;
+    line-height: 1.5rem;
+    font-weight: var(--weight4);
+}
+
+.itemL img {
+    margin-inline-end: 1rem;
+}
+
+form{
+    padding-block-start: 2rem;
+}
+
+#labels{
+    display: grid;
+    grid-template-columns: 2 / 1fr;
+    grid-template-rows: 1 / 1fr;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+label{
+    grid-area: 1 / 1 / 1 / 1;
+    font-size: 0.75rem;
+    font-weight: var(--weight7);
+}
+
+#errorMsg{
+    grid-area: 1 / 2 / 1 / 2;
+    font-size: 0.75rem;
+    font-weight: var(--weight7);
+    color: var(--Tomato);
+}
+
+input[type="email"]{
+    width: 20rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--Gray);
+    margin-block-start: -0.6rem;
+    margin-block-end: 1rem;
+    cursor: pointer;
+    color: var(--DarkSlateGray);
+    font-family: var(--FontFamily);
     font-size: 1rem;
-    display: inline-block;
-    margin-inline-start: 2rem;
-    margin-block-start: -6rem;
 }
 
+input::placeholder{
+    color: var(--Gray);
+    font-family: var(--FontFamily);
+    font-size: 1rem;
+}
+
+.tomato::placeholder{
+    color: var(--Tomato);
+    font-family: var(--FontFamily);
+    font-size: 1rem;
+}
+
+button{
+    cursor: pointer;
+    width: 20rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 0px;
+    background-color: var(--DarkSlateGray);
+    color: white;
+    font-size: 1rem;
+    font-family: var(--FontFamily);
+    font-weight: 500;
+}
+
+button:hover, button:focus{
+    background-image: linear-gradient(to right, #FF527B,#FF6155);
+    border: 0px;
+    box-shadow: 0px 7px 18px rgba(255, 102, 71, 0.8);
+}
 
 
 
 #subscribe{
-    display: block;
+    display: none;
 }
 
 #success{
-    display: none;
+    display: block;
+}
+
+footer{
+    color: var(--CharcoalGray);
+    margin: 1rem;
 }
