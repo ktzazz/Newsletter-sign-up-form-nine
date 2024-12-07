@@ -1,3 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGray: hsl(234, 29%, 20%);
+    --CharcoalGray:hsl(235, 18%, 26%);
+    --Gray:hsl(231, 7%, 60%);
+    --White:hsl(0, 0%, 100%);
+    --FontSize: 16px;
+    --FontFamily:'Roboto';
+    --weight4:400;
+    --weight7:700;
+}
+
+
+
 #subscribe{
     display: block;
 }
