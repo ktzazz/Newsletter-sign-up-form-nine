@@ -27,7 +27,7 @@ formulario.addEventListener('submit', (event) => {
     } else {
         success.style.display = 'block';
         subscribe.style.display = 'none';
-        document.getElementById('userEmail').textContent = `${email}`; //print user's email
+        document.getElementById('userEmail').textContent = `${email}.`; //print user's email
         picture.parentNode.removeChild(picture); //deletes the picture from the first window
     }
 });

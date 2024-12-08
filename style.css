@@ -19,6 +19,10 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: 100vw;
     height: 100%;
@@ -60,6 +64,10 @@ ul{
 
 form{
     padding-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #labels{
@@ -67,7 +75,7 @@ form{
     grid-template-columns: 2 / 1fr;
     grid-template-rows: 1 / 1fr;
     justify-content: space-between;
-    width: 20rem;
+    width: 20.7rem;
 }
 
 label{
@@ -84,12 +92,12 @@ label{
 }
 
 input[type="email"]{
-    width: 20rem;
+    width: 21rem;
     padding: 1.2rem;
     border-radius: 8px;
     border: 1px solid var(--Gray);
     margin-block-start: -0.6rem;
-    margin-block-end: 1rem;
+    margin-block-end: 0.4rem;
     cursor: pointer;
     color: var(--DarkSlateGray);
     font-family: var(--FontFamily);
@@ -110,7 +118,7 @@ input::placeholder{
 
 button{
     cursor: pointer;
-    width: 20rem;
+    width: 21rem;
     padding: 1.2rem;
     border-radius: 8px;
     border: 0px;
@@ -127,14 +135,41 @@ button:hover, button:focus{
     box-shadow: 0px 7px 18px rgba(255, 102, 71, 0.8);
 }
 
+.success{
+    padding-block-start: 8rem;
+}
 
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sTitle, #sDesc{
+    padding-left: 1.5rem;
+    padding-inline-end: 1.2rem;
+}
+
+#sDesc{
+    padding-bottom: 12rem;
+}
+
+.check{
+    margin-left: 1.5rem;
+    margin-block-end: 1.7rem;
+}
+
+#userEmail{
+    font-weight: var(--weight7);
+}
 
 #subscribe{
-    display: none;
+    display: block;
 }
 
 #success{
-    display: block;
+    display: none;
 }
 
 footer{
