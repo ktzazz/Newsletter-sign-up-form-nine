@@ -12,6 +12,7 @@ formulario.addEventListener('submit', (event) => {
     const errorMsg = document.getElementById('errorMsg');
     const mailInput = document.getElementById('mail');
     const picture = document.getElementById('picture');
+    const main = document.getElementById('main');
 
     // Expresión regular para validar correos electrónicos
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -29,6 +30,7 @@ formulario.addEventListener('submit', (event) => {
         subscribe.style.display = 'none';
         document.getElementById('userEmail').textContent = `${email}.`; //print user's email
         picture.parentNode.removeChild(picture); //deletes the picture from the first window
+        main.parentNode.removeChild(main);
     }
 });
 
